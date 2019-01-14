@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import styled from 'styled-components';
 
+import Slider from './Slider';
+
 const Repair = styled.div`
 color: #ffffff;
 line-height: 50px;
@@ -40,20 +42,20 @@ class Main extends React.Component {
 		return(
 			<Row>
 			<Col lg={5}>
-			<Repair>Качественный ремонт
-			<span> iphone за 35 минут и гарантия 1 год </span>
-			</Repair>
-			<LightText> 
-			Оставьте заявку на бесплатную диагностику без очереди,
-			и получите защитное стекло, стоимостью 1000 рублей,
-			с установкой в подарок!
-			</LightText>
-			<CallBtn>
-			Отправить заявку!
-			</CallBtn>
+				<Repair>Качественный ремонт
+				<span> iphone за 35 минут и гарантия 1 год </span>
+				</Repair>
+				<LightText> 
+				Оставьте заявку на бесплатную диагностику без очереди,
+				и получите защитное стекло, стоимостью 1000 рублей,
+				с установкой в подарок!
+				</LightText>
+				<CallBtn>
+				Отправить заявку!
+				</CallBtn>
 			</Col>
 			<Col lg={6} lgOffset={1}>
-
+				<Slider />
 			</Col>
 			</Row>
 
